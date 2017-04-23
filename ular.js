@@ -103,7 +103,7 @@
                     paint_cell(food.x, food.y);  
                     //Mewarnai score game  
                     var score_text = "Score: " + score;  
-                    ctx.fillText(score_text, 5, h - 5);  
+                    document.getElementById("nilai").innerHTML=score_text;
                 }  
   
                 function paint_cell(x, y)  
