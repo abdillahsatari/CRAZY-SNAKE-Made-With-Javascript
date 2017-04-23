@@ -110,7 +110,7 @@
                 {  
                     ctx.fillStyle = "white";  
                     ctx.fillRect(x * cw, y * cw, cw, cw);  
-                    ctx.strokeStyle = "white";  
+                    ctx.strokeStyle = "blue";  
                     ctx.strokeRect(x * cw, y * cw, cw, cw);  
                 }  
   
