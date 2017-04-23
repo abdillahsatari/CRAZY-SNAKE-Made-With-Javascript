@@ -51,7 +51,7 @@
                 //Mewarnai tubuh ular  
                 function paint()  
                 {  
-                    ctx.fillStyle = "white";  
+                    ctx.fillStyle = "green";  
                     ctx.fillRect(0, 0, w, h);  
                     ctx.strokeStyle = "black";  
                     ctx.strokeRect(0, 0, w, h);  
@@ -108,7 +108,7 @@
   
                 function paint_cell(x, y)  
                 {  
-                    ctx.fillStyle = "blue";  
+                    ctx.fillStyle = "white";  
                     ctx.fillRect(x * cw, y * cw, cw, cw);  
                     ctx.strokeStyle = "white";  
                     ctx.strokeRect(x * cw, y * cw, cw, cw);  
