@@ -3,16 +3,13 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	 <script src="jquery-2.1.4.js" type="text/javascript"></script> 
-         <script src="ular.js" type="text/javascript"></script>
 </head>
 <body>
 	<p id="score"></p>
 	
 <form>
-        <button type="Start">Start</button>
-        <button type= "Pause">Pause</button>
+        <button type="Pause">Pause</button>
+        <button type= "Resume">Resume</button>
 </form>
 	<p id="Arena">Arena</p>
 	
@@ -25,8 +22,21 @@
 </form>
 
 <center>
-<canvas id="canvas" height="400" width="520"></canvas>	
+	<div id="parent"></div>
 </center>
-
 </body>
+	<script src="snake-js.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	document.addEventListener("DOMContentLoaded", function(){
+	var parentElement = document.getElementById("parent");
+	var settings = {
+		    frameInterval : 120,
+		    backgroundColor : "#f3e698"
+	};
+	var game = new SnakeJS(parentElement, settings);
+	}, 
+	true);
+
+</script>
 </html>
