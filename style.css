@@ -1,17 +1,93 @@
-body
-{
-	color: white;
-	background-color: #A2DEFA;
-	margin-left: 150px; 
-	margin-right: 150px;
-	font-family: times new roman;
+h2{color:blue;}
+
+body {padding: 0; margin: 0; overflow: hidden;}
+#canvas {background: green;}
+
+menu a:hover {
+    text-decoration: none;
 }
-img 
-{
-	width:500px; height:300px;
-	border: 30px solid #999999;
-	padding: 5px;
+menu ul {
+    list-style: none;
 }
-#fied{
-	position: center;
+menu ul li {
+    float: left;
+    padding: 5px 20px;
+}
+menu ul li:hover {
+    background-color: #2980b9;
+}
+menu ul li ul {
+    display: none;
+    list-style: none;
+    margin-left: -20px;
+}
+menu ul li ul li {
+    float: none;
+    padding: 5px 20px;
+    margin-left: -40px;
+}
+menu ul li ul li:hover {
+    background-color: #2980b9;
+}
+menu ul li:hover > ul {
+    display: block;
+    position: absolute;
+    background: #ddd;
+}
+menu ul li:hover > a {
+    color: #fff;
+} 
+canvas {
+  border: 2px solid rgb(151, 149, 149);
+}
+
+#atas{
+    background: #00AFF0;
+}
+#tengah{
+    background: #A2DEFA;
+    margin-top: 50px;
+}
+
+body{
+    background: #A2DEFA;
+}
+#bawah{
+    width: 100%;
+    height: 125px;
+    max-height: 100%;
+    float: left;
+    bottom: 0px;
+    background: url(../file/background.png);
+    background-size: 19%;
+    margin-top: 59px;
+    background-repeat: repeat-x;
+}
+
+#atas ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+#atas ul li{
+    float: left;
+    padding-right: 30px;
+}
+
+#tombol1{
+    background: #F08E45;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: center;
+    margin-left: 300px;
+    margin-right: 29px
+}
+#tombol2{
+    background: #E6E7E9;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+#tesformat option{
+    background-color: red;
 }
