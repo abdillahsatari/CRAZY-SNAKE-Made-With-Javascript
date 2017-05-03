@@ -6,24 +6,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="atas">
+
+<ul>
+	<li>
 	<span id="score"></span>
 	<span id="high_score"></span>
-	
-<form>
-        <button id="Pause">Pause</button>
-        <button id= "Resume">Resume</button>
-</form>
+	</li>
+	<li>
+	<br>
+        	<button id="tombol">Pause</button>
+	</li>
+	<li>
+	<br>
+        	<button id= "tombol2">Resume</button>
+	</li>
+	<li>
 	<p id="Arena">Arena</p>
+	</li>
+	<li>
+	<br>
 	
-<form name="Arena">
-<select name="Arena">
-	<option value="ARENA1">ARENA 1</option>
-	<option value="ARENA2">ARENA 2</option>
-	<option value="ARENA3">ARENA 3</option>
-</select>
-</form>
-<div id="field">
-	<div id="parent"></div>
+	<form name="Arena">
+	<select name="Arena">
+	<optgroup id="tesformat" label="arena">
+		<option value="ARENA1">ARENA 1</option>
+		<option value="ARENA2">ARENA 2</option>
+		<option value="ARENA3">ARENA 3</option>
+	</optgroup>
+	</select>
+	</form>
+	</li>
+</ul>
+</div>
+<div id="tengah">
+<center>
+		<div id="field">
+			<div id="parent"></div>
+		</div>
+</center>
+</div>
+<div id="bawah">
 </div>
 	
 	<!--memanggil file javascript-->
