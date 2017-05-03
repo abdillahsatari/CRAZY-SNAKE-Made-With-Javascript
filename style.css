@@ -58,7 +58,7 @@ body{
     max-height: 100%;
     float: left;
     bottom: 0px;
-    background: url(../file/background.png);
+    background: url(file/background.png);
     background-size: 19%;
     margin-top: 59px;
     background-repeat: repeat-x;
