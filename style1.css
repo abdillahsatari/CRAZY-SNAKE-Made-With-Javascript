@@ -1,0 +1,68 @@
+body {
+	padding: 0; margin: 0; overflow: hidden;
+	background: url(file/back1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: center;
+}
+
+#menu{
+	 background:rgba(2, 2, 2, 0.3);
+	 margin-left: 35% ;
+	 margin-top: 1%;
+	 height: 350px;
+     width: 25%;
+     padding:2%;
+     color:#fff;
+
+}
+
+/*Style logo*/
+#logo{
+	height: 80%;
+	width: 30%;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 35%;
+}
+
+/*copyright*/
+footer{
+	margin-left: 45%;
+	margin-top: 50px;
+	color: white;
+	position: relative;
+}
+
+/*button style*/
+button{
+	border-radius: 12px;
+	border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #f44336;
+}
+button:hover{
+	background-color: white;
+    color: #f44336;
+    border-color: #f44336;
+    border: 5px;
+}
+#tombol1{
+	 margin-top: 25%;
+	 margin-left: 31%;
+	 position: relative;
+}
+#tombol2{
+ 	margin-top: 10%;
+ 	margin-left: 35%;
+ 	position: relative;
+}
