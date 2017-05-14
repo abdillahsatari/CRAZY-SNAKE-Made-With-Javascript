@@ -1,74 +1,28 @@
+/*konifigurasi tempilan*/
 h2{color:blue;}
 
 body {padding: 0; margin: 0; overflow: hidden;}
-#canvas {background: green;}
 
-menu a:hover {
-    text-decoration: none;
-}
-menu ul {
-    list-style: none;
-}
-menu ul li {
-    float: left;
-    padding: 5px 20px;
-}
-menu ul li:hover {
-    background-color: #2980b9;
-}
-menu ul li ul {
-    display: none;
-    list-style: none;
-
-    margin-left: -20px;
-}
-menu ul li ul li {
-    float: none;
-    padding: 5px 20px;
-    margin-left: -40px;}
-menu ul li ul li:hover {
-    background-color: #2980b9;
-}
-menu ul li:hover > ul {
-    display: block;
-    position: absolute;
-    background: #ddd;
-}
-menu ul li:hover > a {
-    color: #fff;
-} 
 canvas {
   border: 2px solid rgb(151, 149, 149);
 }
 
-#atas{
-    background: #00AFF0;
-}
 #tengah{
     background: #A2DEFA;
     margin-top: 50px;
 }
 
 body{
-    background: #A2DEFA;
-}
-img{
-    background-repeat: repeat;
-    margin-top: -30px;
-    height: 50px;
-}
-#bawah{
-    width: 100%;
-    height: 125px;
-    max-height: 100%;
-    float: left;
-    bottom: 0px;
-    background: url(file/background.png);
-    background-size: 19%;
-    margin-top: 79px;
-    background-repeat: repeat-x;
+    background: #B2EBF2;
 }
 
+/*style untuk nav bar*/
+#atas{
+     background:rgba(2, 2, 2, 0.3);
+     height:85px;
+     padding:10px;
+     color:#fff;
+}
 #atas ul{
     list-style: none;
     position: relative;
@@ -80,32 +34,157 @@ img{
     padding-right: 30px;
 }
 
-#tombol1{
-    background: #F08E45;
-    padding: 5px 15px;
-    border-radius: 10px;
-    position: center;
-    margin-left: 300px;
-    margin-right: 29px
-}
-#tombol2{
-    background: #E6E7E9;
-    padding: 5px 15px;
-    border-radius: 10px;
-}
-#tesformat option{
-    background-color: red;
-}
-#gbr_kiri{
-    position: relative;
+/*Style untuk gambar rumput*/
+#bawah{
+    width: 100%;
+    height: 125px;
+    max-height: 100%;
     float: left;
-    left: 7%;
-    top: 150px;
+    bottom: 0px;
+    background: url(file/background.png);
+    background-size: 19%;
+    margin-top: 77px;
+    background-repeat: repeat-x;
 }
 
-#gbr_kanan{
-    position: relative;
-    float: right;
-    right: 7%;
-    top: 250px;
+/*style tombol pause dan resume*/
+.button{
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #4b4312;
+    background-color: #f3e698;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #7b7e82;
+    
+    margin: 4px 2px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
 }
+.button:hover{
+    background-color: #dbcf8a;
+    color: #f44336;
+    border-color: #afa66e;
+    border: 5px;
+}
+.button:active{
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+#tombol1{
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 700%;
+
+}
+#tombol2{
+    padding: 10px 15px;
+    margin-left: 600%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#Arena{
+    margin-top: 30%;
+    float: left;
+    margin-left: 1500%;
+    position: relative;
+}
+
+/*style untuk tombol dropdown arena*/
+.dropbtn {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #f3e698;
+    border: none;
+    border-radius: 12px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    left: 450%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3e698;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+}
+
+.dropdown-content a:hover {background-color: #dbcf8a}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #dbcf8a;
+    color: red;
+}
+
+/*Membuat animasi awan berjalan*/
+.gambar_awan {position:relative}
+.awan {position:absolute;
+    height:244px;
+    white-space:nowrap}
+
+.awan:nth-child(1) {top:80px}
+.awan:nth-child(2) {top:280px}
+.awan:nth-child(3) {top:494px}
+
+.awan--css1 {
+  animation:left-right 15s infinite;
+  animation-direction:alternate;
+  animation-timing-function:linear}
+
+.awan--css2 {
+  animation:right-left 15s infinite;
+  animation-direction:alternate;
+  animation-timing-function:linear}
+
+
+.awan_item {
+  display:inline-block;
+  overflow:hidden;
+  height:244px;
+  }
+
+img{
+    background-repeat: repeat;
+    height: 50px;
+}
+
+@keyframes left-right {
+0% {left:0;transform:translate(-100%, 0)}
+100% {left:8%;transform:translate(100%, 0)}}
+
+@keyframes right-left {
+0% {right:0;transform:translate(0, 0)}
+100% {right:29%;transform:translate(100%, 0)}}
