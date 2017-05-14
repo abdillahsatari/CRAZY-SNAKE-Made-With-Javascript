@@ -200,8 +200,6 @@ function SnakeJS(parentElement, config){
 			view.drawSnake(snake, config.snakeColor);
 			view.drawCandy(candy);
 			view.drawScore( "score " + score, "High Score " + highScore);
-			document.getElementById("score").innerHTML = "Score : " + score;
-			document.getElementById("high_score").innerHTML = "High Score : " + highScore;
 		};
 
 		var moveSnake = function(desiredDirection){
