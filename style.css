@@ -183,8 +183,25 @@ img{
 
 @keyframes left-right {
 0% {left:0;transform:translate(-100%, 0)}
-100% {left:8%;transform:translate(100%, 0)}}
+100% {left:33%;transform:translate(100%, 0)}}
 
 @keyframes right-left {
 0% {right:0;transform:translate(0, 0)}
-100% {right:29%;transform:translate(100%, 0)}}
+100% {right:-30%;transform:translate(100%, 0)}}
+
+#parent{
+    position: relative;
+    float: left;
+    left: 28%;
+}
+
+#gbr_kiri{
+    position: absolute;
+    left: -960%;
+    right: 300%;
+}
+
+#gbr_kanan{
+    position: absolute;
+    left: 100%;
+}
