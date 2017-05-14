@@ -35,7 +35,7 @@ footer{
 }
 
 /*button style*/
-button{
+a{
 	border-radius: 12px;
 	border: none;
     color: white;
@@ -50,7 +50,7 @@ button{
     cursor: pointer;
     background-color: #f44336;
 }
-button:hover{
+a:hover{
 	background-color: white;
     color: #f44336;
     border-color: #f44336;
@@ -58,11 +58,11 @@ button:hover{
 }
 #tombol1{
 	 margin-top: 25%;
-	 margin-left: 31%;
+	 margin-left: 33%;
 	 position: relative;
 }
 #tombol2{
  	margin-top: 10%;
- 	margin-left: 35%;
+ 	margin-left: 37%;
  	position: relative;
 }
